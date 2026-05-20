@@ -1,322 +1,268 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Atividade Bootstrap</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+<meta charset="UTF-8">
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
 
-    <style>
-        .carousel img{
-    height: 200px;
-    object-fit: contain;
-}
-        .card-img-top{
-    height: 100px;
-    object-fit: contain;
-}
+<title>Atividade Bootstrap</title>
 
-        .btn-primary{
-    height: 100px;
-    width: 100px;
+<link rel="stylesheet"
+href="css/bootstrap.min.css">
 
-}
-
-        .btn-dark{
-    height: 100px;
-    width: 100px;
-}
-
-        .btn-warning{
-    height: 100px;
-    width: 100px;
-}
-
-        .btn-light{
-    height: 100px;
-    width: 100px;
-}
-
-        .btn-success{
-    height: 100px;
-    width: 100px;
-}
-
-        .btn-danger{
-    height: 100px;
-    width: 100px;
-}
+<style>
 
 body{
-    background-color: black;
-    color: white;
+    background:black;
+    color:white;
 }
 
-.emoji-Bola {
-    position: absolute;
-    top: -10%;
-    font-size: 2rem;
-    animation: cair 5s linear infinite;
-
-}
-@keyframes cair {
-    0% {
-        transform: translateY(0) rotate(0deg);
-        opacity: 1;
-    }
-    100% {
-        transform: translateY(110vh) rotate(360deg);
-        opacity: 0;
-    }
-}
-.emoji-Copa{
-    left: 10%;
-    animation-duration: 5s;
+.carousel img{
+    height:200px;
+    object-fit:contain;
 }
 
+.card-img-top{
+    height:120px;
+    object-fit:contain;
+}
 
+.btn{
+    width:100px;
+    height:60px;
+}
+
+.informacoes{
+    margin-top:40px;
+    padding:20px;
+    border:1px solid white;
+}
+
+footer{
+    text-align:center;
+    margin-top:40px;
+    padding:20px;
+}
 
 </style>
+
 </head>
+
 <body>
 
-<div class="emoji-Bola-1"
-button class="btn btn-primary"
->⚽</div>
+<header>
+
+<h1 class="text-center">
+Copa do Mundo
+</h1>
+
+</header>
 
 
 
-<div id="meuCarousel" class="carousel slide" data-bs-ride="carousel" >
+<main>
 
-    <!-- Botões indicadores -->
-    <div class="carousel-indicators">
-        
+<!-- CAROUSEL -->
 
-        
-        <button type="button" data-bs-target="#meuCarousel"
-        data-bs-slide-to="0" class="active"></button>
+<section>
 
-        <button type="button" data-bs-target="#meuCarousel"
-        data-bs-slide-to="1"></button>
+<div id="meuCarousel"
+class="carousel slide"
+data-bs-ride="carousel">
 
-        <button type="button" data-bs-target="#meuCarousel"
-        data-bs-slide-to="2"></button>
+<div class="carousel-inner">
 
-                <button type="button" data-bs-target="#meuCarousel"
-        data-bs-slide-to="3"></button>
+<div class="carousel-item active">
+<img src="img/1.jpg"
+class="d-block w-100">
+</div>
 
-        <button type="button" data-bs-target="#meuCarousel"
-        data-bs-slide-to="4"></button>
+<div class="carousel-item">
+<img src="img/2.jpg"
+class="d-block w-100">
+</div>
 
-                <button type="button" data-bs-target="#meuCarousel"
-        data-bs-slide-to="5"></button>
+<div class="carousel-item">
+<img src="img/3.jpg"
+class="d-block w-100">
+</div>
 
-        <button type="button" data-bs-target="#meuCarousel"
-        data-bs-slide-to="6"></button>
+<div class="carousel-item">
+<img src="img/4.jpg"
+class="d-block w-100">
+</div>
 
-                <button type="button" data-bs-target="#meuCarousel"
-        data-bs-slide-to="7"></button>
+<div class="carousel-item">
+<img src="img/5.jpg"
+class="d-block w-100">
+</div>
 
-    </div>
+<div class="carousel-item">
+<img src="img/6.jpg"
+class="d-block w-100">
+</div>
 
+<div class="carousel-item">
+<img src="img/7.jpg"
+class="d-block w-100">
+</div>
 
-    <!-- Imagens -->
-    <div class="carousel-inner">
-
-        <div class="carousel-item active">
-            <img src="img/1.jpg"
-            class="d-block w-100"
-            alt="Imagem 1">
-        </div>
-
-        <div class="carousel-item">
-            <img src="img/2.jpg"
-            class="d-block w-100"
-            alt="Imagem 2">
-        </div>
-
-        <div class="carousel-item">
-            <img src="img/3.jpg"
-            class="d-block w-100"
-            alt="Imagem 3">
-        </div>
-
-                <div class="carousel-item active">
-            <img src="img/4.jpg"
-            class="d-block w-100"
-            alt="Imagem 4">
-        </div>
-
-        <div class="carousel-item">
-            <img src="img/5.jpg"
-            class="d-block w-100"
-            alt="Imagem 5">
-        </div>
-
-        <div class="carousel-item">
-            <img src="img/6.jpg"
-            class="d-block w-100"
-            alt="Imagem 6">
-        </div>
-
-                <div class="carousel-item active">
-            <img src="img/7.jpg"
-            class="d-block w-100"
-            alt="Imagem 7">
-        </div>
-
-        <div class="carousel-item">
-            <img src="img/8.jpg"
-            class="d-block w-100"
-            alt="Imagem 8">
-        </div>
-
-
-
-
-    </div>
-
-
-    <!-- Botão anterior -->
-    <button class="carousel-control-prev"
-    type="button"
-    data-bs-target="#meuCarousel"
-    data-bs-slide="prev">
-
-        <span class="carousel-control-prev-icon"></span>
-
-    </button>
-
-
-    <!-- Botão próximo -->
-    <button class="carousel-control-next"
-    type="button"
-    data-bs-target="#meuCarousel"
-    data-bs-slide="next">
-
-        <span class="carousel-control-next-icon"></span>
-
-    </button>
+<div class="carousel-item">
+<img src="img/8.jpg"
+class="d-block w-100">
+</div>
 
 </div>
 
+<button class="carousel-control-prev"
+data-bs-target="#meuCarousel"
+data-bs-slide="prev">
 
-<div class="container">
-<div class="row"></div>
+<span class="carousel-control-prev-icon"></span>
 
-<div class="col-md-4"></div>
-<div class="card"></div>
+</button>
 
-<img src="img/1.jpg" class="card-img-top">
+<button class="carousel-control-next"
+data-bs-target="#meuCarousel"
+data-bs-slide="next">
 
-<div class="card-body">
-<h5> Estados Unidos </h5>
-<p> Gordos e Petroleo </p>
+<span class="carousel-control-next-icon"></span>
+
+</button>
+
 </div>
 
-<div class="col-md-4"></div>
-<div class="card"></div>
+</section>
 
-<img src="img/2.jpg" class="card-img-top">
+
+
+<!-- CARDS -->
+
+<section class="container mt-5">
+
+<div class="row">
+
+<article class="col-md-3">
+
+<div class="card">
+
+<img src="img/1.jpg"
+class="card-img-top">
 
 <div class="card-body">
-<h5> Alemanha </h5>
-<p> Cerveja e perdedores </p>
+
+<h5>Estados Unidos</h5>
+
+<p>Gordos e Petróleo</p>
+
 </div>
 
-<div class="col-md-4"></div>
-<div class="card"></div>
-
-<img src="img/3.jpg" class="card-img-top">
-
-<div class="card-body">
-<h5> Russia </h5>
-<p> Cossacos e Comunismo </p>
 </div>
 
-<div class="col-md-4"></div>
-<div class="card"></div>
+</article>
 
-<img src="img/4.jpg" class="card-img-top">
+
+<article class="col-md-3">
+
+<div class="card">
+
+<img src="img/2.jpg"
+class="card-img-top">
 
 <div class="card-body">
-<h5> Portugal </h5>
-<p> Guiana brasileira e Fujoes </p>
+
+<h5>Alemanha</h5>
+
+<p>Cerveja</p>
+
 </div>
 
-<div class="col-md-4"></div>
-<div class="card"></div>
-
-<img src="img/5.jpg" class="card-img-top">
-
-<div class="card-body">
-<h5> Espanha </h5>
-<p> Colonizados Napoleone de Bonaparte </p>
 </div>
 
-<div class="col-md-4"></div>
-<div class="card"></div>
+</article>
 
-<img src="img/6.jpg" class="card-img-top">
+
+<article class="col-md-3">
+
+<div class="card">
+
+<img src="img/7.jpg"
+class="card-img-top">
 
 <div class="card-body">
-<h5> França </h5>
-<p> Campanha da Rússia Reino Unido </p>
+
+<h5>Brasil</h5>
+
+<p>Seleção Brasileira</p>
+
 </div>
 
-<div class="col-md-4"></div>
-<div class="card"></div>
+</div>
 
-<img src="img/7.jpg" class="card-img-top">
+</article>
 
-<div class="card-body">
-<h5> Brasil </h5>
-<p> Bostil, Cuzil, Macaquil, Merdil </p>
-</div><div class="col-md-4"></div>
-<div class="card"></div>
+</div>
 
-<img src="img/8.jpg" class="card-img-top">
-
-<div class="card-body">
-<h5> Argentina </h5>
-<p> Milei Banana </p>
-</div><div class="col-md-4"></div>
-<div class="card"></div>
+</section>
 
 
 
+<!-- BOTÕES -->
 
-<button class="btn btn-primary"></button>
-<button class="btn btn-success"></button>
-<button class="btn btn-danger"></button>
-<button class="btn btn-warning"></button>
-<button class="btn btn-dark"></button>
-<button class="btn btn-light"></button>
+<section class="container mt-4">
+
+<button class="btn btn-primary">
+Azul
+</button>
+
+<button class="btn btn-success">
+Verde
+</button>
+
+<button class="btn btn-danger">
+Vermelho
+</button>
+
+</section>
 
 
 
-<!-- Bootstrap JS -->
-<script src="js/bootstrap.bundle.min.js"></script>
+<!-- JOGOS -->
 
-
-<div class="informacoes">
+<section class="informacoes">
 
 <h2>Jogos</h2>
 
-<p>Mexico vs Africa do sul -- 11/06 -- 16:00</p>
-<p>Coreia do sul vs tchequia -- 11/06 -- 23:00</p>
-<p>canada vs Bosnia e Herzegovina -- 12/06 -- 16:00</p>
-<p>Estados Unidos vs Paraguai -- 12/06 -- 22:00</p>
-<p>Catar vs Suiça -- 13/06 -- 16:00</p>
-<p>Brasil vs Marrocos -- 13/06 -- 19:00</p>
-<p>Haiti vs Escocia -- 13/06 -- 22:00</p>
+<ul>
 
-</div>
+<li>México x África do Sul — 11/06</li>
+
+<li>Brasil x Marrocos — 13/06</li>
+
+<li>Canadá x Bósnia — 12/06</li>
+
+<li>Estados Unidos x Paraguai — 12/06</li>
+
+</ul>
+
+</section>
+
+
+</main>
 
 
 
+<footer>
 
-    
-    
+<p>
+Site feito com Bootstrap
+</p>
+
+</footer>
+
+
+
+<script src="js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>
